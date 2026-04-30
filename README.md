@@ -5,9 +5,7 @@ End-to-end marketing data pipeline using Azure Data Factory, Azure SQL and Power
 # Marketing Data Pipeline (Azure Data Factory)
 
 ## 📌 Overview
-This project simulates a real-world end-to-end marketing data pipeline using Azure Data Factory, Azure SQL Database, and Power BI.
-
-The pipeline ingests, transforms, and analyzes marketing campaign data while also monitoring data quality issues to ensure reliable business insights.
+This project simulates a real-world marketing analytics pipeline designed to ensure data reliability, business insight generation, and data quality monitoring.
 
 ---
 
@@ -98,20 +96,18 @@ CSV (Azure Blob Storage)
 - Applied best practices in data engineering and analytics
 
 ---
+## 📈 Business Impact
 
-## 📈 Outcome
-
-This project demonstrates how to build a production-style data pipeline that not only processes data but also ensures its quality and business usability.
+This pipeline ensures:
+- Reliable marketing performance analysis
+- Prevention of misleading KPIs
+- Improved decision-making for campaign optimization
 
 ---
 
 ## 📸 Screenshots
 
-(Add here)
-- Azure Data Factory pipelines
-- Data Flow transformations
-- Data Quality table
-- Power BI dashboard
+
 
 ---
 
