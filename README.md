@@ -10,6 +10,15 @@ Master pipeline orchestrating the full data flow:
 
 ![Pipeline](screenshots/pipeline-overview.png)
 
+## 📸 Silver Transformation
+![Silver](screenshots/silver.png)
+
+## 📸 Gold KPIs
+![Gold](screenshots/gold.png)
+
+## 📸 Data Quality
+![DQ](screenshots/data-quality.png)
+
 ---
 
 ## 🚀 Overview
