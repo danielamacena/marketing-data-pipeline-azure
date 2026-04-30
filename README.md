@@ -107,7 +107,9 @@ This pipeline ensures:
 
 ## 📸 Screenshots
 
+## 📸 Pipeline Overview
 
+![Pipeline](screenshots/pipeline-overview.png)
 
 ---
 
