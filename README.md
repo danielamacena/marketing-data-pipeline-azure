@@ -14,7 +14,7 @@ Master pipeline orchestrating the full data flow:
 ![Silver](screenshots/silver.png)
 
 ## 📸 Gold KPIs
-![Gold](screenshots/gold.png)
+![Gold](screenshots/golden.png)
 
 ## 📸 Data Quality
 ![DQ](screenshots/data-quality.png)
