@@ -1,119 +1,106 @@
-# marketing-data-pipeline-azure
-End-to-end marketing data pipeline using Azure Data Factory, Azure SQL and Power BI, including data quality monitoring and KPI analysis.
+# Marketing Data Pipeline (Azure)
 
+End-to-end marketing data pipeline built using Azure Data Factory, implementing a Medallion Architecture (Bronze, Silver, Gold) with data quality monitoring.
 
-# Marketing Data Pipeline (Azure Data Factory)
-
-## 📌 Overview
-This project simulates a real-world marketing analytics pipeline designed to ensure data reliability, business insight generation, and data quality monitoring.
 ---
 
-## 📸 Screenshots
-
 ## 📸 Pipeline Overview
+
+Master pipeline orchestrating the full data flow:
 
 ![Pipeline](screenshots/pipeline-overview.png)
 
 ---
+
+## 🚀 Overview
+
+This project demonstrates how to build a scalable and reliable data pipeline for marketing analytics.
+
+The pipeline:
+
+- Ingests raw CSV data into the Bronze layer
+- Cleans and standardizes data in the Silver layer
+- Generates business KPIs in the Gold layer
+- Detects data quality issues for monitoring and validation
+
+---
+
 ## 🏗 Architecture
 
-### Bronze Layer
-Raw data ingestion from CSV files stored in Azure Blob Storage into Azure SQL without any transformation.
+### 🥉 Bronze Layer (Raw Data)
 
-Purpose:
-- Preserve original data
-- Enable traceability and data lineage
-
----
-
-### Silver Layer
-Data cleaning and standardization.
-
-Key transformations:
-- Replaced null values (campaign_name, cost, revenue)
-- Removed invalid records (e.g. zero impressions)
-- Ensured data consistency
+- Stores raw data from CSV ingestion
+- No transformations applied
+- Acts as the single source of truth
 
 ---
 
-### Gold Layer
-Business-ready dataset with calculated KPIs.
+### 🥈 Silver Layer (Cleaned Data)
 
-Metrics calculated:
+- Handles missing values:
+  - `campaign_name → 'Unknown'`
+  - `cost / revenue → 0`
+- Filters invalid records:
+  - `impressions > 0`
+- Ensures consistent and reliable data
+
+---
+
+### 🥇 Gold Layer (Business KPIs)
+
+Creates analytical metrics:
+
 - CTR (Click Through Rate)
 - Conversion Rate
 - CPA (Cost per Acquisition)
 - ROAS (Return on Ad Spend)
-- Profit
+- Profit (Revenue - Cost)
 
 ---
 
-### Data Quality Layer
-Identification and tracking of problematic records.
+### ⚠️ Data Quality Layer
 
-Checks implemented:
-- Missing campaign names
+Detects problematic records such as:
+
+- Missing campaign name
 - Zero impressions
+- Zero cost
 - Conversions greater than clicks
 - Missing revenue
-- Zero cost
 
-Each issue is classified and stored with a description for monitoring and debugging.
+Each issue is stored with:
 
----
-
-## 🔄 Data Flow
-
-CSV (Azure Blob Storage)  
-→ Bronze (Raw Data)  
-→ Silver (Cleaned Data)  
-→ Gold (Business KPIs)  
-→ Data Quality (Error Monitoring)
+- Issue date
+- Issue type
+- Issue description
 
 ---
 
-## ⚙️ Technologies Used
+## 🔄 Pipeline Flow
 
-- Azure Data Factory
+1. CSV → Bronze (raw ingestion)
+2. Bronze → Silver (data cleaning & validation)
+3. Silver → Gold (KPI calculation)
+4. Data Quality checks (issue detection)
+
+---
+
+## 🛠 Technologies Used
+
+- Azure Data Factory (ADF)
 - Azure SQL Database
-- Azure Blob Storage
-- Power BI
-- Python (data simulation)
+- Data Flow transformations
+- Medallion Architecture (Bronze / Silver / Gold)
 
 ---
 
-## 📊 Example Data Quality Issues
-
-| Campaign | Issue |
-|---------|------|
-| NULL campaign name | Missing campaign name |
-| impressions = 0 | Zero impressions |
-| conversions > clicks | Logical inconsistency |
-| revenue = NULL | Missing revenue |
-
----
-
-## 💡 Key Learnings
-
-- Designed a multi-layer data pipeline (Bronze/Silver/Gold)
-- Implemented business KPI calculations
-- Built data quality monitoring framework
-- Ensured data reliability for decision-making
-- Applied best practices in data engineering and analytics
-
----
 ## 📈 Business Impact
 
-This pipeline ensures:
-- Reliable marketing performance analysis
-- Prevention of misleading KPIs
-- Improved decision-making for campaign optimization
-
+- Ensures accurate marketing performance reporting
+- Prevents incorrect KPI calculations caused by bad data
+- Improves trust in analytics and decision-making
+- Enables scalable and reusable data pipelines
 
 ---
 
-## 🚀 Next Steps
-
-- Enhance data quality rules
-- Add pipeline automation (triggers)
-- Improve dashboard storytelling in Power BI
+## 📂 Project Structure
