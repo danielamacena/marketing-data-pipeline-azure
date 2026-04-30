@@ -6,9 +6,15 @@ End-to-end marketing data pipeline using Azure Data Factory, Azure SQL and Power
 
 ## 📌 Overview
 This project simulates a real-world marketing analytics pipeline designed to ensure data reliability, business insight generation, and data quality monitoring.
-
 ---
 
+## 📸 Screenshots
+
+## 📸 Pipeline Overview
+
+![Pipeline](screenshots/pipeline-overview.png)
+
+---
 ## 🏗 Architecture
 
 ### Bronze Layer
@@ -103,13 +109,6 @@ This pipeline ensures:
 - Prevention of misleading KPIs
 - Improved decision-making for campaign optimization
 
----
-
-## 📸 Screenshots
-
-## 📸 Pipeline Overview
-
-![Pipeline](screenshots/pipeline-overview.png)
 
 ---
 
