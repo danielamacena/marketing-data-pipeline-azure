@@ -316,12 +316,9 @@ marketing-data-pipeline-azure/
 Potential future enhancements:
 
 * CI/CD deployment pipeline
-* Event-based Blob triggers
 * Monitoring & alerting
-* Power BI dashboard integration
 * Delta Lake implementation
-* Parameterized pipeline execution
-* Infrastructure as Code (Terraform/Bicep)
+
 
 ---
 
