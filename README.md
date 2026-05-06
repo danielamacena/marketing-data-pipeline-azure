@@ -44,7 +44,7 @@ Data cleaning and standardization process:
 
 Business KPI calculations and analytics layer:
 
-![Gold](screenshots/golden.png)
+![Gold](screenshots/golde.png)
 
 ---
 
