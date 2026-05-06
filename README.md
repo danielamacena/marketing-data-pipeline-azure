@@ -28,7 +28,7 @@ Azure Function automatically generating marketing CSV files and saving them into
 
 Raw ingestion layer storing source data from Blob Storage:
 
-![Bronze](screenshots/bronze-layer.png)
+![Bronze](screenshots/bronze.png)
 
 ---
 
@@ -327,8 +327,7 @@ Potential future enhancements:
 # 👩‍💻 Author
 
 Daniela Macena
-
-Analytics Engineer | Data Analyst | Data Engineering Projects
+Data Engineer Projects
 
 LinkedIn:
 [https://linkedin.com/in/danielamacena](https://linkedin.com/in/danielamacena)
