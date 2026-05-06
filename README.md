@@ -292,6 +292,7 @@ This pipeline demonstrates several important data engineering concepts used in p
 * Data validation
 * Analytics-ready transformations
 * Production-style architecture patterns
+* Parameterized pipeline execution using environment parameters
 
 ---
 
